@@ -1,11 +1,11 @@
 # Figures
 
-Given a class `Point`, an abstract class `Figure`, 
-skeletons of classes `Triangle`, `Quadrilateral`, `Circle`, implement the following.
+Given: a class `Point`, an abstract class `Figure` and 
+skeletons of classes `Triangle`, `Quadrilateral`, `Circle`.
 
-Make `Triangle`, `Quadrilateral`, `Circle` extend `Figure` class.
+1. Make `Triangle`, `Quadrilateral`, `Circle` extend `Figure` class.
 
-Implement methods in `Triangle`, `Quadrilateral`, `Circle`:
+2. Implement methods in `Triangle`, `Quadrilateral`, `Circle`:
 
 1. constructors with following parameters:
     * `Triangle` - three vertices (points) as parameters.
