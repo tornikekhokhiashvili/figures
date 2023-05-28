@@ -11,12 +11,14 @@ abstract class Figure{
     }
 
     public  Point leftmostPoint(){
-        Point[] points = getPoints();
-        Point leftmost = points[0];
+        Point leftmost = null;
+        double minX = Double.MAX_VALUE;
 
-        for (int i = 1; i < points.length; i++) {
-            if (points[i].getX() < leftmost.getX()) {
-                leftmost = points[i];
+        Point[] points = getPoints();
+        for (Point point : points) {
+            if (point.getX() < minX) {
+                minX = point.getX();
+                leftmost = point;
             }
         }
 
