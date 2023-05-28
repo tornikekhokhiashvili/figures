@@ -23,8 +23,14 @@ class Triangle extends Figure {
     }
 
     @Override
-    Point[] getPoints() {
-        return new Point[]{a,b,c};
+    public Point leftmostPoint() {
+        if (a.getX() <= b.getX() && a.getX() <= c.getX()) {
+            return a;
+        } else if (b.getX() <= c.getX()) {
+            return b;
+        } else {
+            return c;
+        }
     }
 
     @Override

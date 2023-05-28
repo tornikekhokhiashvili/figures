@@ -25,8 +25,16 @@ class Quadrilateral extends Figure {
     }
 
     @Override
-    Point[] getPoints() {
-        return new Point[]{a,b,c,d};
+    public Point leftmostPoint() {
+        if (a.getX() <= b.getX() && a.getX() <= c.getX() && a.getX() <= d.getX()) {
+            return a;
+        } else if (b.getX() <= c.getX() && b.getX() <= d.getX()) {
+            return b;
+        } else if (c.getX() <= d.getX()) {
+            return c;
+        } else {
+            return d;
+        }
     }
 
     @Override

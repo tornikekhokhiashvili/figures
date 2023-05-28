@@ -19,8 +19,8 @@ class Circle extends Figure {
     }
 
     @Override
-    Point[] getPoints() {
-        return new Point[]{center};
+    public Point leftmostPoint() {
+        return center;
     }
 
     @Override
