@@ -9,9 +9,7 @@ abstract class Figure{
 
     public abstract String pointsToString();
 
-    public  String toString(){
-        return getClass().getSimpleName() + "[" + pointsToString() + "]";
-    };
+    public abstract String toString();
 
     public abstract Point leftmostPoint();
 
