@@ -1,5 +1,7 @@
 package com.epam.rd.autotasks.figures;
 
+import java.util.Arrays;
+
 abstract class Figure{
 
     public abstract double area();
@@ -11,18 +13,9 @@ abstract class Figure{
     }
 
     public  Point leftmostPoint(){
-        Point leftmost = null;
-        double minX = Double.MAX_VALUE;
-
         Point[] points = getPoints();
-        for (Point point : points) {
-            if (point.getX() < minX) {
-                minX = point.getX();
-                leftmost = point;
-            }
-        }
-
-        return leftmost;
+        Arrays.sort(points, (p1, p2) -> Double.compare(p1.getX(), p2.getX()));
+        return points[0];
     };
      abstract Point[] getPoints();
 
