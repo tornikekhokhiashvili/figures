@@ -28,4 +28,9 @@ class Quadrilateral extends Figure {
     Point[] getPoints() {
         return new Point[]{a,b,c,d};
     }
+
+    @Override
+    public String toString() {
+       return "Quadrilateral[" + pointsToString() + "]";
+    }
 }
