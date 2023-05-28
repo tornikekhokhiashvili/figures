@@ -31,6 +31,6 @@ class Quadrilateral extends Figure {
 
     @Override
     public String toString() {
-       return "Quadrilateral[" + pointsToString() + "]";
+       return "Quadrilateral"+"[" + pointsToString() + "]";
     }
 }

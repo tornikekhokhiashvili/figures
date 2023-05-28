@@ -26,4 +26,9 @@ class Triangle extends Figure {
     Point[] getPoints() {
         return new Point[]{a,b,c};
     }
+
+    @Override
+    public String toString() {
+        return "Triangle" + "[" + pointsToString()  + "]";
+    }
 }

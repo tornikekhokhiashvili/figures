@@ -22,4 +22,9 @@ class Circle extends Figure {
     Point[] getPoints() {
         return new Point[]{center};
     }
+
+    @Override
+    public String toString() {
+        return "Circle" + "[" + pointsToString() + radius + "]";
+    }
 }
