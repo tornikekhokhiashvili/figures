@@ -15,7 +15,7 @@ class Circle extends Figure {
 
     @Override
     public String pointsToString() {
-        return center.toString();
+        return String.valueOf(center);
     }
 
     @Override

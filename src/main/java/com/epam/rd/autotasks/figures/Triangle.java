@@ -19,7 +19,7 @@ class Triangle extends Figure {
 
     @Override
     public String pointsToString() {
-        return a.toString()+b.toString()+c.toString();
+        return String.valueOf(a)+String.valueOf(b)+String.valueOf(c);
     }
 
     @Override

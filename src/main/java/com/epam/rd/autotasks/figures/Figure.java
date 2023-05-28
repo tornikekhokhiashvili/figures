@@ -1,7 +1,5 @@
 package com.epam.rd.autotasks.figures;
 
-import java.util.Arrays;
-import java.util.Comparator;
 
 abstract class Figure{
 
