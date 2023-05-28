@@ -1,6 +1,6 @@
 package com.epam.rd.autotasks.figures;
 
-class Circle extends Figure {
+public class Circle extends Figure {
         private Point center;
         private double radius;
 

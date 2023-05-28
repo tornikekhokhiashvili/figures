@@ -1,6 +1,6 @@
 package com.epam.rd.autotasks.figures;
 
-class Point {
+public class Point {
     private double x;
     private double y;
 
@@ -17,4 +17,8 @@ class Point {
         return y;
     }
 
+    @Override
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
 }
