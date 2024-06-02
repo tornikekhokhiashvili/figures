@@ -1,10 +1,10 @@
 package com.epam.rd.autotasks.figures;
 
 class Quadrilateral extends Figure {
-    private Point a;
-    private Point b;
-    private Point c;
-    private Point d;
+    private final Point a;
+    private final Point b;
+    private final Point c;
+    private final Point d;
     public Quadrilateral(Point a, Point b, Point c, Point d){
         this.a=a;
         this.b=b;
@@ -21,7 +21,7 @@ class Quadrilateral extends Figure {
 
     @Override
     public String pointsToString() {
-        return String.valueOf(a)+String.valueOf(b)+String.valueOf(c)+String.valueOf(d);
+        return a +String.valueOf(b)+ c + d;
 
     }
 

@@ -2,9 +2,9 @@ package com.epam.rd.autotasks.figures;
 
 class Triangle extends Figure {
 
-    private Point a;
-    private Point b;
-    private Point c;
+    private final Point a;
+    private final Point b;
+    private final Point c;
     public Triangle(Point a,Point b,Point c){
         this.a=a;
         this.b=b;
@@ -19,7 +19,7 @@ class Triangle extends Figure {
 
     @Override
     public String pointsToString() {
-        return String.valueOf(a)+String.valueOf(b)+String.valueOf(c);
+        return a +String.valueOf(b)+ c;
     }
 
     @Override
